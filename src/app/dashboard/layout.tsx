@@ -5,8 +5,8 @@ import Head from 'next/head';
 
 export const metadata = {
   metadataBase: new URL('http://localhost:3000/dashboard'),
-  title: 'Dashboard Layout Title',
-  description: 'Description of the dashboard layout',
+  title: 'Starkbank Dashboard',
+  description: 'Starknet Dashboard provides you with All in one Investments, Loans and Accont Balance',
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -15,7 +15,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
-        {/* Additional head content */}
       </Head>
       <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
         <div className="w-full flex-none md:w-64">

@@ -1,10 +1,5 @@
 import { SignInButton, SignedIn, SignedOut } from "@clerk/nextjs";
 import Link from "next/link";
-import Header from "./components/header";
-import AboutPage from "./components/aboutus";
-import Contact from "./components/contact";
-import Faqs from "./components/faqs";
-import Rates from "./components/rates";
 
 export default function Home() {
   return (
@@ -12,11 +7,10 @@ export default function Home() {
       <article className="grid relative min-h-screen  overflow-hidden">
         <div className="px-8 py-20 md:px-20 lg:py-48 text-center">
           <h1 className="text-5xl font-semibold text-transparent md:text-6xl gradient md:leading-[1.5em]">
-            Writers Hub - Join Us Today
+            StarkBank - Your Decentralized Banking App
           </h1>
           <p className="mt-2 text-lg">
-            A simple writers app simple job application process, Secure credentials by Clerk.
-          </p>
+          Your most secure, entirely on-chain banking option is StarkBank, which provides decentralized savings and loans with incredibly interest rates.          </p>
 
           <SignedIn>
             <div className="mt-8 inline-block">
@@ -35,18 +29,7 @@ export default function Home() {
           </SignedOut>
         </div>
       </article>
-      <article id="rates" className="grid">
-        <Rates/>
-      </article>
-      <article id="about" className="grid">
-        <AboutPage/>
-      </article>
-      <article id="contact" className="grid">
-        <Contact/>
-      </article>
-      <article id="faqs" className="grid relative min-h-screen  overflow-hidden">
-        <Faqs/>
-      </article>
+
     </main>
   );
 }
